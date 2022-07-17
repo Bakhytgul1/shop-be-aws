@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Product 1",
+    "id": "1",
+    "detail": "Lorem ipsum dolor sit amet",
+    "price": "12",
+    "image": "http://placehold.it/300x300/999/CCC"
+  },
+  {
+    "name": "Product 2",
+    "id": "2",
+    "detail": "Lorem ipsum dolor sit amet",
+    "price": "33",
+    "image": "http://placehold.it/300x300/999/CCC"
+  },
+  {
+    "name": "Product 3",
+    "id": "3",
+    "detail": "Lorem ipsum dolor sit amet",
+    "price": "234",
+    "image": "http://placehold.it/300x300/999/CCC"
+  },
+  {
+    "name": "Product 4",
+    "id": "4",
+    "detail": "Lorem ipsum dolor sit amet",
+    "price": "23",
+    "image": "http://placehold.it/300x300/999/CCC"
+  },
+  {
+    "name": "Product 5",
+    "id": "5",
+    "detail": "Lorem ipsum dolor sit amet",
+    "price": "56",
+    "image": "http://placehold.it/300x300/999/CCC"
+  },
+  {
+    "name": "Product 6",
+    "id": "6",
+    "detail": "Lorem ipsum dolor sit amet",
+    "price": "25",
+    "image": "http://placehold.it/300x300/999/CCC"
+  }
+]

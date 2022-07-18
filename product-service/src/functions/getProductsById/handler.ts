@@ -1,6 +1,6 @@
-import type { ValidatedEventAPIGatewayProxyEvent } from "../../libs/api-gateway";
-import { formatJSONResponse } from "../../libs/api-gateway";
-import { middyfy } from "../../libs/lambda";
+import type { ValidatedEventAPIGatewayProxyEvent } from "@libs/api-gateway";
+import { formatJSONResponse } from "@libs/api-gateway";
+import { middyfy } from "@libs/lambda";
 import ProductServerice from "../../product-service";
 
 const productService = new ProductServerice();
@@ -12,6 +12,11 @@ const getProductsById: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async
 
   try {
     const product = await productService.getProductsById(id);
+
+    if (!product) {
+      throw Error("Product not found");
+    }
+
     return formatJSONResponse({
       product,
     });

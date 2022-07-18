@@ -5,11 +5,11 @@ export default class ProductServerice {
     constructor() { }
 
     async getProductsList(): Promise<Product[]> {
-        return Promise.resolve(JSON.parse(JSON.stringify(products)).default);
+        return Promise.resolve(JSON.parse(JSON.stringify(products))?.default);
     }
 
     async getProductsById(id: string): Promise<Product> {
-        const product = JSON.parse(JSON.stringify(products)).default.find(item => item.id === id);
+        const product = JSON.parse(JSON.stringify(products))?.default?.find(item => item.id === id);
         return Promise.resolve(product);
     }
 }

@@ -1,6 +1,7 @@
 const path = require('path');
 const slsw = require('serverless-webpack');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
@@ -12,6 +13,7 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.ts'],
+    plugins: [new TsconfigPathsPlugin({})]
   },
   mode: 'development',
   target: 'node',

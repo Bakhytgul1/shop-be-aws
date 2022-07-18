@@ -8,9 +8,7 @@ const productService = new ProductServerice();
 const getProductsList = async ():Promise<APIGatewayProxyResult> => {
   try {
     const products = await productService.getProductsList();
-    return formatJSONResponse({
-      products,
-    });
+    return formatJSONResponse(products);
   } catch (e) {
     return formatJSONResponse({
       status: 500,
